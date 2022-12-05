@@ -1,0 +1,4 @@
+Pseudo prof : doliprane500 (github) hzone(gitlab)
+
+Création d'un utilisateur et le mettre dans le groupe admin
+intéragration clée publique ssh
