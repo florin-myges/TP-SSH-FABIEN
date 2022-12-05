@@ -1,7 +1,10 @@
 Pseudo prof : doliprane500 (github) hzone(gitlab)
 
 Création d'un utilisateur et le mettre dans le groupe admin
-intéragration clée publique ssh
+
+intéragration clée publique ssh dans le dossier .ssh de l'utilisateur il y'a le fichier authorized_keys ou dedans il y'a la clé publique
+
+Donc modifier le script pour intégrer tout ça
 
 
 
