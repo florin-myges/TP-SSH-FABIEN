@@ -19,7 +19,7 @@ read login
 
 # Création d'un utilisateur et l'ajouter au groupe root ainsi que lui créer un répertoire personnel et lui assigner un shell bash
 
-useradd $login --create-home --groups root --gid root --shell /bin/bash
+useradd $login --create-home --groups root --gid sudo --shell /bin/bash
 
 # Ajout d'un mot de passe pour cet utilisateur
 echo "Attribuez un mot de passe à l'utilisateur"
