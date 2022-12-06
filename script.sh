@@ -24,3 +24,14 @@ useradd $login --create-home --groups root --gid root --shell /bin/bash
 # Ajout d'un mot de passe pour cet utilisateur
 echo "Attribuez un mot de passe à l'utilisateur"
 passwd $login
+
+# Modification du répertoire personnel de l'utilisateur avec sa clé ssh publique
+
+echo "Quelle est votre clé publique ssh"
+read pubkey
+
+cd /home/$login
+mkdir .ssh
+cd .ssh
+touch authorized_keys
+echo $pubkey >> /home/$login/.ssh/authorized_keys
