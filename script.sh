@@ -17,13 +17,13 @@ systemctl restart sshd
 echo "Que voulez-vous comme login pour l'utilisateur"
 read login
 
-# Création d'un utilisateur et l'ajouter au groupe root ainsi que lui créer un répertoire personnel et lui assigner un shell bash
+# Création d'un utilisateur et l'ajouter au groupe sudo ainsi que lui créer un répertoire personnel et lui assigner un shell bash
 
-useradd $login --create-home --groups root --gid sudo --shell /bin/bash
+useradd $login --create-home --groups sudo --gid sudo --shell /bin/bash
 
 # Ajout d'un mot de passe pour cet utilisateur
-echo "Attribuez un mot de passe à l'utilisateur"
-passwd $login
+#echo "Attribuez un mot de passe à l'utilisateur"
+#passwd $login
 
 # Modification du répertoire personnel de l'utilisateur avec sa clé ssh publique
 
